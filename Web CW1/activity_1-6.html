@@ -1,0 +1,282 @@
+<HTML>
+
+<HEAD>
+    <TITLE>
+        HTML Table Design
+    </TITLE>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</HEAD>
+
+<BODY>
+    <a href="#Activity-1">activity 1</a>
+    <ul>
+        <li><a href="tab_ex1.html">tab_ex1</a><br></li>
+        <li><a href="tab_ex2.html">tab_ex2</a><br></li>
+        <li><a href="tab_ex3.html">tab_ex3</a><br></li>
+        <li><a href="tab_ex4.html">tab_ex4</a><br></li>
+
+    </ul>
+    <a href="#activity-2">activity 2</a><br>
+    <a href="#activity-3">activity 3</a>
+    <ul>
+        <li><a href="adv_tab1.html">adv_tab1</a><br></li>
+        <li><a href="adv_tab2.html">adv_tab2</a><br></li>
+
+    </ul>
+    <a href="#activity-4">activity 4</a><br>
+    <ul>
+        <li><a href="adv_tab3.html">adv_tab3</a><br></li>
+        <li><a href="adv_tab4.html">adv_tab4</a><br></li>
+        <li><a href="adv_tab5.html">adv_tab5</a><br></li>
+        <li><a href="adv_tab6.html">adv_tab6</a><br></li>
+
+    </ul>
+    <a href="#activity-5">activity 5(adv_tab7)</a><br>
+    <a href="#Activity-6">activity 6</a>
+
+    <!----This is Activity 1-->
+    <p>
+        <a name="activity-1">
+            <h2>Activity 1: Creating a table</h2>
+        </a>
+
+        <table style="width:80%" align="center">
+            <caption p style="font-family: verdana">Tabling</caption>
+            <tr align="center">
+                <TD width=25% height=70 bgcolor="red">
+                    <p style="font-family: verdana">red cell </p>
+                </td>
+                <TD width=75% bgcolor="lightblue">
+                    <p style="font-family: Comic Sans MS"> light blue cell </p>
+                </td>
+            </tr>
+        </table>
+
+        <TABLE style="width: 90%" align="center"><br><br>
+            <caption> CSC4370/6370 timetable </caption>
+            <tr>
+                <td width=50%> </td>
+                <th width=150> Monday </th>
+                <th width=150> Tuesday</th>
+                <th width=150> Wednesday </th>
+                <th width=150> Thursday</th>
+                <th width=150> Friday</th>
+            </tr>
+            <tr>
+                <td> 6-7pm </td>
+                <td> Look at website</td>
+                <td> free </td>
+                <td> Implementation </td>
+                <td> free </td>
+                <td> free </td>
+            </tr>
+            <tr>
+                <td> 7-8pm </td>
+                <td> Take some notes</td>
+                <td> free </td>
+                <td> Implementation </td>
+                <td> free </td>
+                <td> free </td>
+            </tr>
+        </TABLE>
+    </p>
+    <br>
+    <br>
+
+    <!----This is Activity 2-->
+    <p>
+        <a name="activity-2">
+            <h2>Activity 2: HTML color table</h2>
+        </a>
+
+        <table align=center>
+            <tr>
+                <th>Colour</th>
+                <th>Name</th>
+                <th>Hexadecimal</th>
+                <th>RGB value</th>
+            </tr>
+            <tr>
+                <td bgcolor=salmon></td>
+                <td>Salmon</td>
+                <td>FA8042</td>
+                <td>250-128-114</td>
+            </tr>
+            <tr>
+                <td bgcolor=Gold></td>
+                <td>Gold</td>
+                <td>FFD700</td>
+                <td>255-215-0</td>
+            </tr>
+            <tr>
+                <td bgcolor=Blue></td>
+                <td>Salmon</td>
+                <td>FA8042</td>
+                <td>250-128-114</td>
+            </tr>
+            <tr>
+                <td bgcolor=Green></td>
+                <td>Green</td>
+                <td>EED900</td>
+                <td>351-557-32</td>
+            </tr>
+        </table>
+    </p>
+    <br>
+    <br>
+
+
+    <!----This is Activity 3-->
+    <p>
+        <a name="activity-3">
+            <h2>Activity 3: Using rowspan</h2>
+        </a>
+
+        <table align=center width=300 height=150>
+            <tr>
+                <td width=200 rowspan=2 bgcolor=red>red cell</td>
+                <td width=550 bgcolor=silver>silver cell</td>
+            </tr>
+            <tr>
+                <td width=550 bgcolor=gold>Gold cell</td>
+            </tr>
+        </table>
+    </p>
+    <br>
+    <br>
+
+    <!----This is Activity 4-->
+    <p>
+        <a name="activity-4">
+            <h2>Activity 4: Using colspan</h2>
+        </a>
+
+        <table align=center width=220 height=150 cellspacing=10 cellpadding=10>
+            <tr>
+                <td width=200 colspan=2 bgcolor=red>red cell</td>
+            </tr>
+            <tr>
+                <td width=550 bgcolor=silver>silver cell</td>
+                <td width=550 bgcolor=gold>Gold cell</td>
+            </tr>
+        </table>
+    </p>
+    <br>
+    <br>
+
+    <!----This is Activity 5-->
+    <p>
+        <a name="activity-5">
+            <h2>Activity 5: More cellspacing and cellpadding</h2>
+        </a>
+
+        <table cellspacing=0 cellpadding=0 align=center style=width:30% height=10% border=0>
+            <tr>
+                <td bgcolor=darkred height=15 width=50> </td>
+                <td bgcolor=red width=100 height=12> </td>
+                <td bgcolor=pink width=100 height=12> </td>
+            </tr>
+
+            <tr>
+                <td bgcolor=darkblue height=15 width=50></td>
+                <td bgcolor=blue width=100 height=12></td>
+                <td bgcolor=lightblue width=100 height=12></td>
+            </tr>
+
+        </table>
+    </p>
+    <br>
+    <br>
+
+    <!----This is Activity 6-->
+    <p>
+        <a name="activity-6">
+            <h2>Activity 6: Time Table</h2>
+        </a>
+
+        <table bgcolor="#DFFF00" align="center">
+            <caption p style="font-family: verdana">Rachid's Timetable</caption>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td colspan=2>Morning</td>
+                <td>Lunch</td>
+                <td colspan=3>Afternoon</td>
+                <td colspan=1>Evening</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td>9-10 am</td>
+                <td>10-11 am</td>
+                <td>11-12 pm</td>
+                <td>12-1 pm</td>
+                <td>1-2 pm</td>
+                <td>2-6 pm</td>
+                <td>6-9 pm</td>
+
+            </tr>
+
+            <tr>
+                <td rowspan=2>School</td>
+                <td>Monday</td>
+                <td colspan=2>Free</td>
+                <td></td>
+                <td colspan=2 bgcolor="lightblue">CSC4350</td>
+
+                <td colspan=2 bgcolor="silver">Study(HW/Projects)</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td colspan=2 bgcolor="gold">CSC4360</td>
+                <td></td>
+                <td colspan=2 bgcolor="lightgreen">CSC4370</td>
+                <td colspan=2 bgcolor="silver">Study(HW/Projects)</td>
+            </tr>
+
+            <tr>
+                <td rowspan=2>School and Work</td>
+                <td>Wednesday</td>
+                <td colspan=2>Free</td>
+                <td></td>
+                <td colspan=2 bgcolor="lightblue">CSC4350</td>
+
+                <td colspan=2 bgcolor="silver">Study(HW/Projects)</td>
+
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td bgcolor="#FF00FF">CSC4999</td>
+                <td bgcolor="gold">CSC4360~Lab</td>
+                <td></td>
+                <td colspan=2 bgcolor="lightgreen">CSC4370</td>
+
+                <td colspan=2 bgcolor="pink">Work(outside of school</td>
+            </tr>
+
+            <tr>
+                <td>Work and Leisure</td>
+                <td>Friday</td>
+                <td colspan=2>Gym/Soccer</td>
+                <td></td>
+                <td colspan=2>Free</td>
+
+                <td colspan=2 bgcolor="pink">Work(outside of school</td>
+
+            </tr>
+        </table>
+    </p>
+
+</BODY>
+
+</HTML>

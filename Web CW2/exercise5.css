@@ -1,0 +1,52 @@
+/*ex5 style sheet*/
+
+body {
+    background-color: chocolate;
+}
+
+.artist {
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 14pt;
+    color: moccasin;
+}
+
+.title {
+    font-family: "Arial";
+    font-weight: normal;
+    font-size: 14pt;
+    color: khaki;
+}
+
+.album {
+    font-family: "Arial";
+    font-weight: normal;
+    font-size: 12pt;
+    color: khaki;
+}
+
+.year {
+    font-family: "Arial";
+    font-weight: bold;
+    font-size: 12pt;
+    color: ivory;
+}
+
+.verse {
+    font-size: 14pt;
+    font-family: Trebuchet MS;
+    font-weight: Bold;
+    color: gold;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
+.chorus {
+    font-size: 14pt;
+    font-family: Trebuchet MS;
+    font-weight: Bold;
+    font-style: italic;
+    color: gold;
+    margin-left: 4cm;
+    margin-right: 4cm;
+}

@@ -1,0 +1,42 @@
+/*exampleStyle*/
+
+header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+.leftColumn {
+    flex-basis: 33%;
+}
+
+.rightColumn {
+    flex-basis: 67%;
+}
+
+#columnAttributes {
+    padding: 2em;
+    margin: 2em;
+    border: 4px dashed red;
+    height: 360px;
+}
+
+img {
+    float: right;
+    width: 200px;
+}
+
+.rightParagragh {
+    clear: both;
+}
+
+.paragragh {
+    position: fixed;
+}
+
+.p {
+    position: fixed;
+    bottom: 5%;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First Reaction</title>
+    <script src="./scripts/1.js"></script>
+    <script src="./scripts/2.js"></script>
+    <script src="./scripts/3.js"></script>
+    <style>
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .customer {
+        background-color: #ebebeb;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .address {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      class DisplayCustomer extends React.Component {
+        render() {
+          return (
+            <div className="customer">
+              <h2>Customer Details</h2>
+              <b>Name: {this.props.name}</b>
+              <br />
+              <b>Email: {this.props.email}</b>
+              <DisplayAddress address={this.props.address} />
+            </div>
+          );
+        }
+      }
+      class DisplayAddress extends React.Component {
+        render() {
+          return (
+            <div className="address">
+              <b>Address</b>
+              <br /> Street:{this.props.address.street}
+              <br /> City:{this.props.address.city}
+            </div>
+          );
+        }
+      }
+      var address1 = { street: "Spice Wood Springs", city: "Atlanta" };
+      var address2 = { street: "Mira beach Blvd", city: "Florida" };
+      ReactDOM.render(
+        <main>
+          <DisplayCustomer
+            name="John"
+            email="john@gmail.com"
+            address={address1}
+          />
+          <DisplayCustomer
+            name="John1"
+            email="john1@gmail.com"
+            address={address1}
+          />
+          <DisplayCustomer
+            name="John2"
+            email="john2@gmail.com"
+            address={address1}
+          />
+          <DisplayCustomer
+            name="John3"
+            email="john3@gmail.com"
+            address={address1}
+          />
+        </main>,
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>

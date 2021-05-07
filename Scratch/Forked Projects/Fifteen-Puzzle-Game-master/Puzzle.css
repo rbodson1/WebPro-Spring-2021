@@ -1,0 +1,162 @@
+body {
+	width:800px;
+    height: 800px;
+    margin: auto;
+    background-image: url("background.png");
+    background-color: #663a30;
+    background-repeat:repeat-x;
+}
+
+h1 {
+    text-align: center;
+    font-family: chewy, sans-serif;
+}
+
+/* Error message when clicking on ineligible tile */
+#error-message {
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    position: relative;
+    right: 550px;
+    top:550px;
+    font-size: 20pt;
+    color: white;
+    text-shadow: 2px 2px black;  
+    animation:fadeout 0.5s 1;
+    -webkit-animation:fadeout 0.5s 1;
+    animation-fill-mode: forwards;
+    animation-delay:2s;
+    -webkit-animation-delay:2s; 
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Buttons */
+button#shufflebtn {
+	background-color: rebeccapurple;
+	width: 100px;
+	height: 50px;
+	border: 5px black;
+	border-radius: 25px;
+	font-size: 16px;
+	color: white;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	position: relative;
+    right:450px;
+    top:50px;
+    cursor: pointer;
+}
+
+button#background, button#puzzle{
+    background-color: rebeccapurple;
+    width: 150px;
+    height: 50px;
+    border: 5px black;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    position: relative;
+    right:600px;
+    top:150px;
+    cursor: pointer;
+}
+
+button#puzzle {
+    top: 200px;
+    right: 500px;
+}
+
+/* TileGrid */
+div#grid {
+    border: none;
+    background: none;
+    width:500px;
+    height:500px;
+    padding:0px;
+    margin: 0 auto;
+    align-content: center;
+    box-shadow: none;
+    position: relative;
+    right:200px;
+    left:200px;
+}
+/* Timer */
+div#timer {
+    position: relative;
+    left: 0px;
+    border-radius: 25px;
+    font-size: 25px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    background-color: red;
+    color:white;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    right:600px;
+    top:350px;
+
+
+}
+
+/* Counter */
+div#counter-container {
+    position: relative;
+    border-radius: 25px;
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+    background-color: red;
+    color:white;
+    border: none;
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+    box-shadow: none;
+    cursor: pointer;
+    right:200px;
+    top:460px;
+}
+    #counter-message {
+        display: inline;
+        margin: unset;
+            font-size: 25;
+
+    }
+
+    div {
+        font-family: chewy, sans-serif;
+        border:5px solid #21837F;
+        border-radius: 25px;
+        box-shadow:5px 10px 5px black;
+        width: 50px;
+        height: 50px;
+        margin:10px;
+        padding:20px;
+        float:left;
+        position: relative;
+        font-size: 30pt;
+        text-align: center;
+        cursor:pointer;
+        color: white;
+        text-shadow: 2px 2px black;  
+    }
+
+    div#tile_16{
+        visibility:hidden;
+    }
+
+
+
+/* Keyframes */
+@keyframes fadeout{
+    0%   {opacity: 1;}
+    70%  {opacity: 1;}
+    90% {opacity: 1;-webkit-transform: translateY(0px);}
+    100% {opacity: 0;-webkit-transform: translateY(-30px);}
+}
+@-webkit-keyframes fadeout{
+    0%   {opacity: 1;}
+    70%  {opacity: 1;}
+    90% {opacity: 1;-webkit-transform: translateY(0px);}
+    100% {opacity: 0;-webkit-transform: translateY(-30px);}
+}  

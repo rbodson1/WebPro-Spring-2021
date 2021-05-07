@@ -1,0 +1,31 @@
+    /* myStyle.css */
+
+body {
+    background-color: rgb(0, 128, 28);
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #ff33e4;
+    text-align: center;
+    font: italic 200% fantasy;
+}
+
+p {
+    background-color: #ff8f33;
+    color: #333300;
+    text-align: left;
+    border: 3px groove #FFFF33;
+}
+
+span {
+    font-size: 3rem;
+}
+
+.shadow1 {
+    margin: 30px;
+    background-color: rgb(68, 68, 68);
+    /* Needed for IEs */
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);

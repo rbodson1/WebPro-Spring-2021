@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Form Validation</title>
+  </head>
+  <body>
+    <form>
+      <div id="err1" style="color: red; text-decoration: underline"></div>
+      <label for="ID">ID:</label>
+      <input type="text" id="ID" /><br />
+      <div id="err2" style="color: red; text-decoration: underline"></div>
+      <label for="FirstName">First Name:</label>
+      <input type="text" id="FirstName" /><br />
+      <div id="err3" style="color: red; text-decoration: underline"></div>
+      <label for="LastName">Last Name:</label>
+      <input type="text" id="LastName" /><br /><br />
+      <input type="submit" value="Add" onclick="handleSubmit(event)" />
+    </form>
+    <p id="UID"></p>
+    <p id="FN"></p>
+    <p id="LN"></p>
+    <script type="text/javascript">
+      handleID = () => {
+        e1.innerHTML = "Please Enter an ID";
+        msg += " ID,";
+        isSubmissionInvalid = true;
+      };
+
+      handleFname = () => {
+        e2.innerHTML = "Please Enter a First Name";
+        msg += " First Name, ";
+        isSubmissionInvalid = true;
+      };
+
+      handleLname = () => {
+        e3.innerHTML = "Please Enter a Last Name";
+        msg += "Last Name";
+        isSubmissionInvalid = true;
+      };
+
+      handleSubmit = (event) => {
+        event.preventDefault();
+
+        let id = document.getElementById("ID").value;
+        let fname = document.getElementById("FirstName").value;
+        let lname = document.getElementById("LastName").value;
+
+        let e1 = document.getElementById("err1");
+        let e2 = document.getElementById("err2");
+        let e3 = document.getElementById("err3");
+
+        let uid = document.getElementById("UID");
+        let fn = document.getElementById("FN");
+        let ln = document.getElementById("LN");
+
+        let msg = "You forgot to fill in the following field(s)";
+        let isSubmissionInvalid = false;
+
+        if (id === "") {
+          e1.innerHTML = "Please Enter an ID";
+          msg += " ID,";
+          isSubmissionInvalid = true;
+        }
+
+        if (fname === "") {
+          e2.innerHTML = "Please Enter a First Name";
+          msg += " First Name, ";
+          isSubmissionInvalid = true;
+        }
+
+        if (lname === "") {
+          e3.innerHTML = "Please Enter a Last Name";
+          msg += "Last Name";
+          isSubmissionInvalid = true;
+        }
+
+        if (!isSubmissionInvalid) {
+          uid.innerHTML = "UserID: " + id;
+          fn.innerHTML = "First Name: " + fname;
+          ln.innerHTML = "Last Name: " + lname;
+        } else {
+          alert(msg);
+        }
+      };
+    </script>
+  </body>
+</html>

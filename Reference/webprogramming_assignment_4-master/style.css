@@ -1,0 +1,66 @@
+body{
+    font-family: fantasy;
+	background-image: url("bg.jpg");
+    font-family: 'Righteous', cursive;
+    color: #f4aa42;
+    text-align: center;
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+td{
+    width: 100px;
+    color: red; 
+    text-align: center;
+}
+
+
+#game{
+    visibility: hidden;
+}
+
+
+.imgs{
+    height: 100px;
+    width: 100px;
+}
+a{
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 20pt;
+}
+#game3{
+    visibility: hidden;
+}
+
+div#game3 > div{
+	background-color: #f0ead6;
+	border:#000 1px solid;
+	width:200px;
+	height:200px;
+	float:left;
+	margin:10px;
+	padding:20px;
+	font-size:150px;
+	cursor:pointer;
+	text-align:center;
+}
+
+

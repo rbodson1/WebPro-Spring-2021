@@ -1,0 +1,62 @@
+body {
+    background-image: url("images/background.jpg");
+    font-family: sans-serif;
+    color: white;
+    font-size: 25px
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .portrait {
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .caption {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    font-size: 18px
+  }
+
+  a:hover { 
+    background-color: greenyellow;
+  }
+
+  .red {
+    color: red;
+    font-weight: bold;
+  }
+
+  a {
+    color: white;
+  }
+
+  th {
+    color: blue;
+  }
+
+  tr:nth-child(even) {
+    background-color: black;
+  }
+
+  tr:nth-child(odd) {
+    background-color: gray;
+  }
+
+  table {
+    width: 50%;
+  }

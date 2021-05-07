@@ -1,0 +1,54 @@
+#game {
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
+#board {
+	font-size: 32px;
+	height: 400px;
+	padding: 0px;
+	position: relative;
+	width: 400px;
+}
+
+#shuffleBtn {
+	text-align: center;
+	width: 400px;
+}
+
+#validator {
+	text-align: right;
+}
+
+.tile {
+	background-image: url(background.jpg);
+	border: 2px solid black;
+	height: 100px;
+	line-height: 100px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+}
+
+.moveableTile {
+	background-image: url(background.jpg);
+	border: 2px solid red;
+	color: #006600;
+	text-decoration: underline;
+	height: 100px;
+	line-height: 100px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+}
+
+.winText {
+	color: red;
+	font-size: 50px;
+	position: relative;
+	width: 50%;
+	text-align: right;
+}

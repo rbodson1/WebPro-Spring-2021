@@ -1,0 +1,65 @@
+/* myStyle.css */
+
+body {
+    background-color: purple;
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #FFFF33;
+    text-align: center;
+    font: italic 200% fantasy;
+}
+
+p {
+    background-color: #55ff33;
+    color: #333300;
+    text-align: left;
+    border: 3px groove #ff8533;
+}
+
+span {
+    font-size: 3rem;
+}
+
+.shadow1 {
+    margin: 40px;
+    background-color: rgb(68, 68, 68);
+    /* Needed for IEs */
+    -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+    box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+}
+
+p#alert {
+    color: black;
+    font-weight: bold;
+    background: #FFFF66;
+    /* yellow */
+    border: 2px solid black;
+    padding: 1em;
+}
+
+
+/* 
+
+#alert {
+    color: black;
+    font-weight: bold;
+    background: #FFFF66; yellow 
+    border: 2px solid black;
+    padding: 1em;
+  }
+
+*/
+
+div.review {
+    background-color: #eae6f5;
+    /* pale blue */
+    border: 1px solid #0d9900;
+    /* dark blue */
+}
+
+p.summary {
+    font-style: italic;
+}

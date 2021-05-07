@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CW7</title>
+  </head>
+  <body>
+    <p id="q1">A JavaScript program to get the first n Fibonacci numbers.</p>
+    <div id="question1"></div>
+    <p id="q2">
+      A JavaScript program to construct the following pattern, using a nested
+      for loopto print asterisks.
+    </p>
+    <div id="question2"></div>
+    <p id="q3">A JavaScript program to should sort the items of an array</p>
+    <div id="question3"></div>
+    <p id="q4">
+      A JavaScript program to find the most frequent item of an array
+    </p>
+    <div id="question4"></div>
+    <p id="q5">A JavaScript program to shuffle an array of 6 integer val</p>
+    <div id="question5"></div>
+    <br />
+    <label id="q6">Enter Color Value to change body</label>
+    <input type="text" id="bodycolor" />
+    <button onclick="changeBodyColor()">Change Body Color</button>
+
+    <br />
+    <br />
+    <label id="q7">Enter Color Value to change text color</label>
+    <input type="text" id="textcolor" />
+    <button onclick="changeTextColor()">Change Text Color</button>
+
+    <script type="text/javascript">
+      let q1 = document.getElementById("question1");
+      let q2 = document.getElementById("question2");
+      let q3 = document.getElementById("question3");
+      let q4 = document.getElementById("question4");
+      let q5 = document.getElementById("question5");
+
+      let t1 = document.getElementById("q1");
+      let t2 = document.getElementById("q2");
+      let t3 = document.getElementById("q3");
+      let t4 = document.getElementById("q4");
+      let t5 = document.getElementById("q5");
+      let t6 = document.getElementById("q6");
+      let t7 = document.getElementById("q7");
+
+      let q6 = document.getElementsByClassName("txtColor");
+      //   let bodyColor = document.getElementById("bodycolor").value;
+      //   let textColor = document.getElementById("textcolor").value;
+
+      // Write a JavaScript program to get the first n Fibonacci numbers.
+      let fibonacci = (num) => {
+        if (num <= 1) return 1;
+        return fibonacci(num - 1) + fibonacci(num - 2);
+      };
+
+      q1.innerHTML = fibonacci(10);
+
+      // Write a JavaScript program to construct the following pattern, using a nested for loopto print asterisks.
+
+      let drawAstrickTriangle = (num) => {
+        let line = "";
+        for (let i = 1; i <= num; i++) {
+          for (let j = 1; j <= i; j++) {
+            line += "*";
+          }
+          line += "<br>";
+        }
+        return line;
+      };
+
+      q2.innerHTML = drawAstrickTriangle(10);
+
+      // Write a JavaScript program toshould sortthe items of an array
+
+      let arr1 = [3, 8, 7, 6, 5, -4, 3, 2, 1];
+
+      let sortMyArray = (array) => {
+        return array.sort();
+      };
+
+      q3.innerHTML = sortMyArray(arr1);
+
+      // Write a JavaScript program to find the most frequent item of an array
+
+      let arr2 = [3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3];
+
+      let mostFrequentIndex = (arr) => {
+        let mf = 1;
+        let m = 0;
+        let item;
+
+        for (let i = 0; i < arr.length; i++) {
+          for (let j = i; j < arr.length; j++) {
+            if (arr[i] == arr[j]) m++;
+            if (mf < m) {
+              mf = m;
+              item = arr[i];
+            }
+          }
+        }
+        return item;
+      };
+
+      q4.innerHTML = mostFrequentIndex(arr2);
+
+      // Write a JavaScript program to shuffle an array of 6 integer val
+
+      let shuffleArr = (array) => {
+        return array.sort(() => Math.random() - 0.5);
+      };
+      q5.innerHTML = shuffleArr(arr2);
+
+      let changeBodyColor = () => {
+        let bodyColor = document.getElementById("bodycolor").value;
+        if (bodyColor != "") {
+          return (document.body.style.backgroundColor = bodyColor);
+        }
+      };
+
+      let changeTextColor = () => {
+        let textColor = document.getElementById("textcolor").value;
+
+        q1.style.color = textColor;
+        q2.style.color = textColor;
+        q3.style.color = textColor;
+        q4.style.color = textColor;
+        q5.style.color = textColor;
+        t1.style.color = textColor;
+        t2.style.color = textColor;
+        t3.style.color = textColor;
+        t4.style.color = textColor;
+        t5.style.color = textColor;
+        t6.style.color = textColor;
+        t7.style.color = textColor;
+      };
+    </script>
+  </body>
+</html>

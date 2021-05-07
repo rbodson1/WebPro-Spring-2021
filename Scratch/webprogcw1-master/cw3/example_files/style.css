@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+}
+
+/* Create two equal columns that sits next to each other */
+.left-col {
+  flex-basis: 33%;
+  border-style: dotted;
+}
+
+.right-col {
+  flex-basis: 67%;
+}
+
+.col-style {
+  padding: 2em;
+  margin: 2em;
+  border: 4px dashed red;
+}
+
+img {
+  width: 200px;
+  float: right;
+}
+
+#reset {
+  clear: both;
+}
+
+#fixed {
+  position: fixed;
+  bottom: 5px;
+  top: 90%;
+}

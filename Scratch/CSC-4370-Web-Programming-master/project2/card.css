@@ -1,0 +1,19 @@
+/* stylesheet for question and answer page */
+
+body {
+    background-color: #060CE9;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+}
+
+a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 5em;
+    position: fixed;
+    top: 50%;
+    left: 30%;
+}

@@ -1,0 +1,104 @@
+html { 
+    background: url(clouds.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+#mainarea	{
+    width: 40%;
+    height: 60%;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px solid blue;
+    margin-top: 90px;
+    padding-bottom: 20px;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: inset -2px -2px rgba(0,0,0,0.5);
+}
+#main_area2	{
+	margin: auto auto;
+	color: white;
+	width:800px;
+	height: 400px;
+	margin: 0 auto;
+	color:white;
+	border-radius: 25px;
+	margin-top:50px;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	background-color: rgba(0,0,0,0.3);
+    box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+}
+#cancelform	{
+    margin-top: 50px;
+}
+#register_form	{
+	width: 40%;
+	margin: auto;
+	border-radius: 25px;
+	border: 2px solid blue;
+	margin-top: 30px;
+	padding-bottom: 20px;
+	background-color: rgba(0,0,0,0.2);
+    box-shadow: inset -2px -2px rgba(0,0,0,0.5);
+}
+.button	{
+	border-radius: 5px;
+ 	padding: 7px 7px 7px 7px;
+ 	box-shadow: inset -1px -1px rgba(0,0,0,0.5);
+	font-size: 15px;
+}
+#welcometext	{
+	font-size: 50px;
+}
+#registertext	{
+	font-size: 25px;
+}
+#fillertext	{
+	font-size: 35px;
+}
+#nav	{
+    font-size: 17px;
+}
+a:link{color:blue}
+a:visited {color:white}
+a:hover {color:black}
+#gound{color: white}
+#loginarea{
+    background-color: white;
+    width: 30%;
+    margin: auto;
+    border-radius: 25px;
+    border: 2px solid blue;
+    margin-top: 100px;
+    background-color: rgba(0,0,0,0.2);
+    box-shadow: inset -2px -2px rgba(0,0,0,0.5);
+    padding: 40px;
+    font-family:sans-serif;
+    font-size: 20px;
+    color: white;
+}
+#submit	{
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    padding: 7px 7px 7px 7px;
+    box-shadow: inset -1px -1px rgba(0,0,0,0.5);
+    font-size: 17px;
+    margin:auto;
+    margin-top: 20px;
+      display:block;
+      color: white;
+}
+#logintext	{
+    text-align: center;
+}
+.data	{
+    color: white;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}

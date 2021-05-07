@@ -1,0 +1,13 @@
+
+200:Rachid
+600:Bodson
+1000:alain
+200:atayi
+2000:Rita
+0:Nate
+2600:Michael
+800:Hayden
+400:Cari
+1000:TheGoat
+200:Chris
+1000:Ronaldo

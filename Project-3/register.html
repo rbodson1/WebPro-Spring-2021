@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Game Of Life</title>
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        h1 {
+            color: #6c3;
+            text-align: center;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        
+        body {
+            background-image: url("background1.jpg");
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        .content {
+            background-color: rgba(255, 255, 255, .8);
+            border-radius: .25em;
+            box-shadow: 0 0 .25em rgba(0, 0, 0, .25);
+            box-sizing: border-box;
+            left: 50%;
+            padding: 10vmin;
+            position: fixed;
+            text-align: left;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <form action="register-submit.php" method="POST">
+            <h1>Registration Page</h1>
+            <h2>Username:</h2><input type="username" name="username" required><br>
+            <h2>Password:</h2><input type="text" name="password" required><br>
+            <h2></h2>
+            <input type="submit" value="Register">&nbsp;&nbsp; Already registed ? <a href="login.html">login</a>
+
+
+        </form>
+    </div>
+</body>
+
+</html>

@@ -19,14 +19,16 @@
 
         </div>
 
-        <button class="button" onclick="start()" tabindex="5">Start</button>
-        <button class="button" onclick="stop()" tabindex="6">Stop</button>
-        <button class="button" onclick="generationCount(1)" tabindex="1">Increment 1 Generation</button>
-        <button class="button" onclick="generationCount(23)" tabindex="2">Increment 23 Generations</button>
-        <button class="button" onclick="reset()" tabindex="3">Reset</button>
-        <button class="button" onclick="logout()" tabindex="3">Logout</button> <br><br>
+        <button class="button" onclick="start()">Start</button>
+        <button class="button" onclick="stop()">Stop</button>
+        <button class="button" onclick="generationCount(1)">Increment 1 Generation</button>
+        <button class="button" onclick="generationCount(23)">Increment 23 Generations</button>
+        <button class="button" onclick="reset()">Reset</button>
+        <button class="button" onclick="pattern()">Still Life Pattern</button>
+        <button class="button" onclick="oscillators()">Oscillators Pattern</button>
+        <button class="button" onclick="logout()">Logout</button> <br><br>
 
-        <select class="select" id="chooseGrid" tabindex="4" onChange="changeGridSize(this)">
+        <select class="select" id="chooseGrid" onChange="changeGridSize(this)">
             <option value="10" selected>Change Grid Size (Default is 10x10)</option>
             <option value="20">20x20 Grid Size</option>
             <option value="30" >30x30 Grid Size</option>

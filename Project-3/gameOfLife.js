@@ -20,7 +20,7 @@ function start() {
     if (!moving) {
         moving = true;
         generationCount(1);
-        setTimeout(simulate, 200);
+        setTimeout(ticks, 200);
     }
 }
 
@@ -35,40 +35,55 @@ function changeGridSize(selectSize) {
 
     var num = parseInt(selectSize.value);
     gridSize = num;
-    cleanGameCells();
+    cleanGameElem();
     var grid = getGrid();
     var displaySize = document.getElementById('grid');
     displaySize.appendChild(grid);
     updateGeneration(0);
 }
 
-function cleanGameCells() {
+function cleanGameElem() {
     var displaySize = document.getElementById('grid');
     while (displaySize.hasChildNodes()) {
         displaySize.removeChild(displaySize.lastChild);
     }
 }
 
-function simulate() {
+function ticks() {
     if (moving) {
         generationCount(1);
-        setTimeout(simulate, 200);
+        setTimeout(ticks, 200);
     }
 }
 
-function getTdElem(name) {
-    var tdElem = document.createElement('td');
-    tdElem.setAttribute('id', name);
-    tdElem.setAttribute('onclick', 'changeCellState(this)')
-    tdElem.style.height = (500 / gridSize) + 'px';
-    tdElem.style.width = (500 / gridSize) + 'px';
-    return tdElem;
+function pattern() {
+    if (!moving) {
+        moving = true;
+        generationCount();
+    }
 }
 
-function getTrElem(name) {
-    var trElem = document.createElement('tr');
-    trElem.setAttribute('id', name);
-    return trElem;
+function oscillators() {
+    moving = true;
+    generation = 0;
+    setTimeout(ticks, 200);
+}
+
+
+
+function gridColumns(name) {
+    var gridColAttr = document.createElement('td');
+    gridColAttr.setAttribute('id', name);
+    gridColAttr.setAttribute('onclick', 'changeCellState(this)')
+    gridColAttr.style.height = (500 / gridSize) + 'px';
+    gridColAttr.style.width = (500 / gridSize) + 'px';
+    return gridColAttr;
+}
+
+function gridRows(name) {
+    var gridRowAttr = document.createElement('tr');
+    gridRowAttr.setAttribute('id', name);
+    return gridRowAttr;
 }
 
 function getGrid() {
@@ -76,10 +91,10 @@ function getGrid() {
     grid.setAttribute('id', 'game_grid');
     for (var i = 0; i < gridSize; i++) {
         var rowName = 'tr_' + i;
-        var tr = getTrElem(rowName);
+        var tr = gridRows(rowName);
         for (var j = 0; j < gridSize; j++) {
             var tdName = 'td_' + i + '_' + j;
-            var td = getTdElem(tdName);
+            var td = gridColumns(tdName);
             tr.appendChild(td);
         }
         grid.appendChild(tr);
@@ -252,4 +267,9 @@ function calculatePopulation(cellList) {
 function updateGeneration(count) {
     var gen = document.getElementById('generationDisplay');
     gen.innerHTML = "Generation: " + generation;
+}
+
+function logout() {
+    reset();
+    location.replace("index.html")
 }
